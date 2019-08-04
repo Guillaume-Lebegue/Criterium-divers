@@ -28,7 +28,7 @@
     <column id="COL6" populated="true" UUID="3dd3868a-ddc6-482c-9489-68a472d9fb7f" autoIncrement="false" autoIncrementSequenceName="Licencie_DateNaissance_seq" defaultValue="" name="DateNaissance" nullable="0" physicalName="DateNaissance" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL7" populated="true" UUID="27dc6105-da9f-420c-97e2-d351b292a006" autoIncrement="false" autoIncrementSequenceName="Licencie_ClubNom_seq" defaultValue="" name="Club_Nom" nullable="0" physicalName="ClubNom" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL7" populated="true" UUID="27dc6105-da9f-420c-97e2-d351b292a006" autoIncrement="false" autoIncrementSequenceName="Licencie_ClubNom_seq" defaultValue="" name="Club_Nom" nullable="1" physicalName="ClubNom" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -37,7 +37,7 @@
     <folder id="FOLTAB12" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB14" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX8" populated="true" UUID="c2dab5d8-2c7e-4edb-8672-b97c7192ccd6" clustered="false" name="Licencie_pk" physicalName="utilisateur_pk" primaryKeyIndex="true" unique="true" >
+    <index id="IDX8" populated="true" UUID="c2dab5d8-2c7e-4edb-8672-b97c7192ccd6" clustered="false" name="Licencie_pk" physicalName="licencie_pk" primaryKeyIndex="true" unique="true" >
      <index-column id="IDC9" populated="true" UUID="5f40e57f-bb70-4d66-be98-2614e0221e06" ascendingOrDescending="UNSPECIFIED" column-ref="COL2" name="Licence" physicalName="Licence" />
     </index>
     <index id="IDX10" populated="true" UUID="075f6689-2e20-4984-95fa-a61823d5ed91" clustered="false" name="Utilisateur_idx" physicalName="utilisateur_idx" primaryKeyIndex="false" unique="false" >
@@ -57,7 +57,7 @@
     <column id="COL17" populated="true" UUID="b96b782c-7b66-4b4f-b367-a5eb77f08687" autoIncrement="false" autoIncrementSequenceName="Club_CodePostal_seq" defaultValue="" name="CodePostal" nullable="0" physicalName="CodePostal" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL18" populated="true" UUID="f6ff5368-f2a8-479d-b50c-bf55ce9a7835" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="DirecteurLicence" nullable="0" physicalName="DirecteurLicence" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL18" populated="true" UUID="f6ff5368-f2a8-479d-b50c-bf55ce9a7835" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_1" defaultValue="" name="DirecteurLicence" nullable="1" physicalName="DirecteurLicence" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -96,7 +96,7 @@
     <column id="COL30" populated="true" UUID="bfbb3460-3a9e-4bc4-927c-75c3ee8b40ad" autoIncrement="false" autoIncrementSequenceName="Evenement_IsPublic_seq" defaultValue="true" name="IsPublic" nullable="0" physicalName="IsPublic" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
      <remarks></remarks>
     </column>
-    <column id="COL31" populated="true" UUID="c143d53b-6723-4f49-b357-342e0cb5c505" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="CreateurLicence" nullable="0" physicalName="CreateurLicence" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL31" populated="true" UUID="c143d53b-6723-4f49-b357-342e0cb5c505" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_2" defaultValue="" name="CreateurLicence" nullable="0" physicalName="CreateurLicence" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -229,7 +229,7 @@
     <column id="COL66" populated="true" UUID="5610f879-3aef-42c2-ad0a-8553a44c3854" autoIncrement="false" autoIncrementSequenceName="Epreuve_id_seq_2" defaultValue="" name="EpreuveID" nullable="0" physicalName="EpreuveID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL67" populated="true" UUID="36aee16b-af68-4de2-94c5-bcc73816fc01" autoIncrement="false" autoIncrementSequenceName="Orientation_Carte_seq" defaultValue="" name="Carte" nullable="0" physicalName="Carte" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL67" populated="true" UUID="36aee16b-af68-4de2-94c5-bcc73816fc01" autoIncrement="false" autoIncrementSequenceName="Orientation_Carte_seq" defaultValue="" name="Carte" nullable="1" physicalName="Carte" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL68" populated="true" UUID="a475aab9-c14e-4065-832b-d54df9c2f549" autoIncrement="false" autoIncrementSequenceName="Orientation_AvecBalises_seq" defaultValue="false" name="AvecBalises" nullable="0" physicalName="AvecBalises" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="16" userDefinedTypeUUID="a26374aa-3026-4bb8-b564-eb2e186dfa5d" >
@@ -374,7 +374,7 @@
     <column id="COL106" populated="true" UUID="c57e3038-58f1-47f1-8079-cc0f43ce2322" autoIncrement="false" autoIncrementSequenceName="Evenement_id_seq_3" defaultValue="" name="EvenementID" nullable="0" physicalName="EvenementID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL107" populated="true" UUID="c69e364a-cd85-438f-988a-982072ba7c4e" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="UtilisateurLicence" nullable="0" physicalName="UtilisateurLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL107" populated="true" UUID="c69e364a-cd85-438f-988a-982072ba7c4e" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_3" defaultValue="" name="UtilisateurLicence" nullable="0" physicalName="UtilisateurLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL108" populated="true" UUID="2075d2d0-32ef-4964-91ca-4af656c6cc4f" autoIncrement="false" autoIncrementSequenceName="Responsable_Niveau_seq" defaultValue="" name="Niveau" nullable="0" physicalName="Niveau" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -386,7 +386,7 @@
     <folder id="FOLTAB1052" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1054" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX109" populated="true" UUID="9a67f61e-dd22-41ab-8d70-ea27e6038a8c" clustered="false" name="Responsable_pk" physicalName="administrateur_pk" primaryKeyIndex="true" unique="true" >
+    <index id="IDX109" populated="true" UUID="9a67f61e-dd22-41ab-8d70-ea27e6038a8c" clustered="false" name="Responsable_pk" physicalName="responsable_pk" primaryKeyIndex="true" unique="true" >
      <index-column id="IDC110" populated="true" UUID="6acfeabd-4b0d-42e6-a32e-3cc3bda2c533" ascendingOrDescending="UNSPECIFIED" column-ref="COL106" name="EvenementID" physicalName="EvenementID" />
      <index-column id="IDC111" populated="true" UUID="ed65a343-7d1f-4585-81e7-09e593035b9e" ascendingOrDescending="UNSPECIFIED" column-ref="COL107" name="UtilisateurLicence" physicalName="UtilisateurLicence" />
     </index>
@@ -395,10 +395,10 @@
   <table id="TAB112" populated="true" UUID="81e751e6-dae0-46fd-b471-3ecb51cb2264" name="ResponsableEpreuve" objectType="TABLE" physicalName="ResponsableEpreuve" >
    <remarks></remarks>
    <folder id="FOLTAB1121" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL113" populated="true" UUID="eb0645ff-b7b9-45d0-bb17-1d00bf2fff29" autoIncrement="false" autoIncrementSequenceName="Evenement_id_seq_3" defaultValue="" name="EvenementID" nullable="0" physicalName="EvenementID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL113" populated="true" UUID="eb0645ff-b7b9-45d0-bb17-1d00bf2fff29" autoIncrement="false" autoIncrementSequenceName="Evenement_id_seq_3_1" defaultValue="" name="EvenementID" nullable="0" physicalName="EvenementID" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
-    <column id="COL114" populated="true" UUID="dd0eac55-d823-4184-803b-2e74476cc5d9" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="ResponsableLicence" nullable="0" physicalName="ResponsableLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL114" populated="true" UUID="dd0eac55-d823-4184-803b-2e74476cc5d9" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_4" defaultValue="" name="ResponsableLicence" nullable="0" physicalName="ResponsableLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL115" populated="true" UUID="922380d3-77b8-4434-bbd9-4b1b17d18d59" autoIncrement="false" autoIncrementSequenceName="Epreuve_id_seq_4" defaultValue="" name="EpreuveID" nullable="1" physicalName="EpreuveID" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
@@ -413,7 +413,7 @@
     <folder id="FOLTAB1122" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1124" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX117" populated="true" UUID="9025b4cf-b8df-4140-8c1d-4fd686c3a248" clustered="false" name="ResponsableEpreuve_pk" physicalName="epreuveadmin_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX117" populated="true" UUID="9025b4cf-b8df-4140-8c1d-4fd686c3a248" clustered="false" name="ResponsableEpreuve_pk" physicalName="responsableepreuve_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC118" populated="true" UUID="1a128d7f-0a3b-447e-9171-a3eccdc5aa12" ascendingOrDescending="UNSPECIFIED" column-ref="COL113" name="EvenementID" physicalName="EvenementID" />
      <index-column id="IDC119" populated="true" UUID="41f38814-a806-4ec7-bc20-7d7c039ef770" ascendingOrDescending="UNSPECIFIED" column-ref="COL114" name="ResponsableLicence" physicalName="ResponsableLicence" />
     </index>
@@ -449,7 +449,7 @@
     <column id="COL128" populated="true" UUID="7ea53614-5d5e-40bd-ba7c-f3fb9b1a9bdd" autoIncrement="false" autoIncrementSequenceName="Club_Nom_seq_1" defaultValue="" name="ClubNom" nullable="0" physicalName="ClubNom" precision="255" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL129" populated="true" UUID="9170d810-d7a5-487f-b85c-166e5fca83bb" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="UtilisateurLicence" nullable="0" physicalName="UtilisateurLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL129" populated="true" UUID="9170d810-d7a5-487f-b85c-166e5fca83bb" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_5" defaultValue="" name="UtilisateurLicence" nullable="0" physicalName="UtilisateurLicence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     </folder>
@@ -467,7 +467,7 @@
   <table id="TAB133" populated="true" UUID="0dfbf925-1772-4628-ba21-30a0063e83f4" name="Utilisateur" objectType="TABLE" physicalName="Utilisateur" >
    <remarks></remarks>
    <folder id="FOLTAB1331" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL134" populated="true" UUID="7a97c388-ea64-4061-89c3-a4ff19b3c8c0" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="Licencie" nullable="0" physicalName="Licencie" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL134" populated="true" UUID="7a97c388-ea64-4061-89c3-a4ff19b3c8c0" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_6" defaultValue="" name="Licencie" nullable="0" physicalName="Licencie" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL135" populated="true" UUID="3bd0ca69-c5e5-4b99-89e1-5c75685b749e" autoIncrement="false" autoIncrementSequenceName="Licencie_Email_seq" defaultValue="" name="Email" nullable="0" physicalName="Email" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -503,7 +503,7 @@
     <folder id="FOLTAB1332" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1334" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX144" populated="true" UUID="c3d4f918-bb68-40b1-87cf-99b86aa10bfe" clustered="false" name="Utilisateur_pk" physicalName="Utilisateur_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX144" populated="true" UUID="c3d4f918-bb68-40b1-87cf-99b86aa10bfe" clustered="false" name="Utilisateur_pk" physicalName="utilisateur_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC145" populated="true" UUID="1939f6d7-ef17-45b2-a747-7ee858af9e33" ascendingOrDescending="UNSPECIFIED" column-ref="COL134" name="Licencie" physicalName="Licencie" />
     </index>
    </folder>
@@ -511,10 +511,10 @@
   <table id="TAB146" populated="true" UUID="08c5f586-7de0-46b5-8f4d-9aac9189eead" name="Invitation" objectType="TABLE" physicalName="Invitation" >
    <remarks></remarks>
    <folder id="FOLTAB1461" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL147" populated="true" UUID="7a0805c5-90a5-4410-8ac3-ccbedff94ad1" autoIncrement="false" autoIncrementSequenceName="Club_Nom_seq" defaultValue="" name="Nom" nullable="0" physicalName="Nom" precision="255" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL147" populated="true" UUID="7a0805c5-90a5-4410-8ac3-ccbedff94ad1" autoIncrement="false" autoIncrementSequenceName="Club_Nom_seq_1_1" defaultValue="" name="Nom" nullable="0" physicalName="Nom" precision="255" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL148" populated="true" UUID="e4fa6408-29c6-4495-8b70-ca8b55179358" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq" defaultValue="" name="Licence" nullable="0" physicalName="Licence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+    <column id="COL148" populated="true" UUID="e4fa6408-29c6-4495-8b70-ca8b55179358" autoIncrement="false" autoIncrementSequenceName="Licencie_Licence_seq_7" defaultValue="" name="Licence" nullable="0" physicalName="Licence" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
      <remarks></remarks>
     </column>
     <column id="COL149" populated="true" UUID="2abecc55-76e7-4d01-9851-37c1ec73d8f8" autoIncrement="false" autoIncrementSequenceName="Invitation_Email_seq" defaultValue="" name="Email" nullable="0" physicalName="Email" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -529,7 +529,7 @@
     <folder id="FOLTAB1462" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1464" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX151" populated="true" UUID="0d6e1103-589f-4a49-b4d9-0d16d89affdd" clustered="false" name="Invitation_pk" physicalName="Invitation_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX151" populated="true" UUID="0d6e1103-589f-4a49-b4d9-0d16d89affdd" clustered="false" name="Invitation_pk" physicalName="invitation_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC152" populated="true" UUID="aab8718b-5b71-4fe4-b89e-42c3a670d22b" ascendingOrDescending="UNSPECIFIED" column-ref="COL147" name="Nom" physicalName="Nom" />
      <index-column id="IDC153" populated="true" UUID="33711b03-6169-428c-b156-47a7d12b70a1" ascendingOrDescending="UNSPECIFIED" column-ref="COL148" name="Licence" physicalName="Licence" />
     </index>
@@ -553,7 +553,7 @@
     <folder id="FOLTAB1542" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1544" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX158" populated="true" UUID="f893aca1-26fd-4dba-b624-a54784bdddba" clustered="false" name="SiteAdministrateur_pk" physicalName="SiteAdministrateur_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX158" populated="true" UUID="f893aca1-26fd-4dba-b624-a54784bdddba" clustered="false" name="SiteAdministrateur_pk" physicalName="siteadministrateur_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC159" populated="true" UUID="948b9b3a-b09a-415c-8965-44cdeac89a6c" ascendingOrDescending="UNSPECIFIED" column-ref="COL155" name="ID" physicalName="ID" />
     </index>
    </folder>
@@ -561,7 +561,7 @@
   <table id="TAB160" populated="true" UUID="7e867b04-214b-4c7b-a1f7-a98d4494d77f" name="AutoLoginClub" objectType="TABLE" physicalName="AutoLoginClub" >
    <remarks></remarks>
    <folder id="FOLTAB1601" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL161" populated="true" UUID="a6bcedf6-01dc-44bf-b58d-d45d0e4d4fd3" autoIncrement="false" autoIncrementSequenceName="Club_Nom_seq" defaultValue="" name="Nom" nullable="0" physicalName="Nom" precision="255" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL161" populated="true" UUID="a6bcedf6-01dc-44bf-b58d-d45d0e4d4fd3" autoIncrement="false" autoIncrementSequenceName="Club_Nom_seq_2" defaultValue="" name="Nom" nullable="0" physicalName="Nom" precision="255" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     <column id="COL162" populated="true" UUID="fc67c519-24d7-4696-b533-96a409a55683" autoIncrement="false" autoIncrementSequenceName="AutoLoginClub_AutoLogin_seq" defaultValue="" name="AutoLogin" nullable="0" physicalName="AutoLogin" precision="255" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
@@ -573,7 +573,7 @@
     <folder id="FOLTAB1602" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB1604" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX163" populated="true" UUID="68b5f049-a75f-4260-8d6f-4a78478a7ef8" clustered="false" name="AutoLoginClub_pk" physicalName="AutoLoginClub_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX163" populated="true" UUID="68b5f049-a75f-4260-8d6f-4a78478a7ef8" clustered="false" name="AutoLoginClub_pk" physicalName="autologinclub_pk" primaryKeyIndex="true" unique="false" >
      <index-column id="IDC164" populated="true" UUID="dc1cd093-ebca-43cd-9b43-bd6b8ffd6cef" ascendingOrDescending="UNSPECIFIED" column-ref="COL161" name="Nom" physicalName="Nom" />
     </index>
    </folder>

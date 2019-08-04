@@ -17,7 +17,7 @@ CREATE TABLE public.Licencie (
                 Nom VARCHAR(25) NOT NULL,
                 Civilite VARCHAR(3) NOT NULL,
                 DateNaissance DATE NOT NULL,
-                ClubNom VARCHAR(255) NOT NULL,
+                ClubNom VARCHAR(255),
                 CONSTRAINT licencie_pk PRIMARY KEY (Licence)
 );
 
@@ -127,7 +127,7 @@ ALTER SEQUENCE public.epreuve_id_seq OWNED BY public.Epreuve.ID;
 
 CREATE TABLE public.Orientation (
                 EpreuveID INTEGER NOT NULL,
-                Carte VARCHAR(255) NOT NULL,
+                Carte VARCHAR(255),
                 AvecBalises BOOLEAN DEFAULT false NOT NULL,
                 Distance REAL NOT NULL,
                 CONSTRAINT orientation_pk PRIMARY KEY (EpreuveID)
